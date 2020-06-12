@@ -77,5 +77,5 @@ input {
 
  .btn:hover{
   cursor: pointer;
-  background-color: lighter;
+  filter: brightness(150%);
 }
