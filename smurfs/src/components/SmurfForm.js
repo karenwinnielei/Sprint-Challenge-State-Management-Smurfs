@@ -51,7 +51,7 @@ const SmurfForm = (props) => {
           onChange={inputHandler}
           className='input'
         />
-        <input
+        {/* <input
           type='text'
           name='id'
           label='id'
@@ -59,7 +59,7 @@ const SmurfForm = (props) => {
           value={props.id}
           onChange={inputHandler}
           className='input'
-        />
+        /> */}
         <button className='btn' onClick={submitHandler}>
           Add Smurf
         </button>
