@@ -74,3 +74,8 @@ input {
   width: 40%;
   margin: 2% auto;
 }
+
+ .btn:hover{
+  cursor: pointer;
+  background-color: lighter;
+}
