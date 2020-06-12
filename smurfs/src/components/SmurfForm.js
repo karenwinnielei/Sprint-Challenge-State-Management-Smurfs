@@ -11,7 +11,6 @@ const SmurfForm = (props) => {
   });
 
   const submitHandler = (e) => {
-    e.preventDefault();
     props.postSmurfs(smurf);
     document.getElementById('smurfForm').reset();
   };

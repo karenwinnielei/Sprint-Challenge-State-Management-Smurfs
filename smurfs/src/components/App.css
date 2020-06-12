@@ -5,6 +5,7 @@
 .cardContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 80%;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -17,6 +18,7 @@
   border-radius: 5px;
   padding: 2%;
   border: 1px solid black;
+  margin: 2%;
 }
 
 h1 {
@@ -67,8 +69,8 @@ input {
   border: 1px solid white;
   background: slategray;
   color: white;
-  padding: 1%;
+  padding: 2%;
   font-size: 1.3rem;
-  width: 35%;
+  width: 40%;
   margin: 2% auto;
 }
