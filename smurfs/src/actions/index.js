@@ -35,3 +35,20 @@ export const postSmurfs = (smurf) => (dispatch) => {
       dispatch({ type: POST_FAILURE, payload: error.response }),
     );
 };
+
+export const DELETE_START = 'DELETE_START';
+export const DELETE_SUCCESS = 'DELETE_SUCCESS';
+export const DELETE_FAILURE = 'DELETE_FAILURE';
+
+export const deleteSmurfs = (id) => (dispatch) => {
+  dispatch({ type: DELETE_START, id: id });
+  axios
+    .delete(`http://localhost:3333/smurfs/${id}`)
+    .then((response) => {
+      console.log(response.data);
+      dispatch({ type: DELETE_SUCCESS, payload: response.data });
+    })
+    .catch((error) =>
+      dispatch({ type: DELETE_FAILURE, payload: error.response }),
+    );
+};

@@ -7,6 +7,7 @@ const SmurfForm = (props) => {
     name: '',
     age: 0,
     height: '',
+    id: 0,
   });
 
   const submitHandler = (e) => {
@@ -47,6 +48,15 @@ const SmurfForm = (props) => {
           label='height'
           placeholder='Smurf Height'
           value={props.height}
+          onChange={inputHandler}
+          className='input'
+        />
+        <input
+          type='text'
+          name='id'
+          label='id'
+          placeholder='Smurf Id'
+          value={props.id}
           onChange={inputHandler}
           className='input'
         />

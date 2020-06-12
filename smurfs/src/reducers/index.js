@@ -5,6 +5,9 @@ import {
   POST_START,
   POST_SUCCESS,
   POST_FAILURE,
+  DELETE_START,
+  DELETE_SUCCESS,
+  DELETE_FAILURE,
 } from '../actions';
 
 const initialState = {
@@ -53,6 +56,30 @@ const reducer = (state = initialState, action) => {
         error: '',
       };
     case POST_FAILURE:
+      return {
+        ...state,
+        isFetching: false,
+        error: action.payload,
+      };
+    case DELETE_START:
+      return {
+        ...state,
+        smurfs: [
+          ...state.smurfs
+        ],
+        isFetching: true,
+        error: '',
+      };
+    case DELETE_SUCCESS:
+      return {
+        ...state,
+        smurfs: [
+          ...state.smurfs
+        ],
+        isFetching: true,
+        error: '',
+      };
+    case DELETE_FAILURE:
       return {
         ...state,
         isFetching: false,
