@@ -11,8 +11,8 @@ const SmurfCard = (props) => {
   return (
     <div className='card'>
       <h3>{props.smurf.name}</h3>
-      <p>{props.smurf.age}</p>
-      <p>{props.smurf.height}</p>
+      <p>Age: {props.smurf.age}</p>
+      <p>Height: {props.smurf.height}</p>
       <button className='btn' onClick={deleteHandler}>Delete Smurf</button>
     </div>
   );

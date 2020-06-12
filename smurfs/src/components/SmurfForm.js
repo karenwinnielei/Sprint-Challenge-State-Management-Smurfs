@@ -30,7 +30,6 @@ const SmurfForm = (props) => {
           placeholder='Smurf Name'
           value={props.name}
           onChange={inputHandler}
-          className='input'
         />
         <input
           type='text'
@@ -39,7 +38,6 @@ const SmurfForm = (props) => {
           placeholder='Smurf Age'
           value={props.age}
           onChange={inputHandler}
-          className='input'
         />
         <input
           type='text'
@@ -48,17 +46,7 @@ const SmurfForm = (props) => {
           placeholder='Smurf Height'
           value={props.height}
           onChange={inputHandler}
-          className='input'
         />
-        {/* <input
-          type='text'
-          name='id'
-          label='id'
-          placeholder='Smurf Id'
-          value={props.id}
-          onChange={inputHandler}
-          className='input'
-        /> */}
         <button className='btn' onClick={submitHandler}>
           Add Smurf
         </button>
